@@ -1,12 +1,11 @@
 // API à utiliser pour le travail: https://randomuser.me/api/?results=5
 
-//Get Btn And Create Function
 document.getElementById('bouton').addEventListener('click', getData);
 
 function getData() {
     // console.log('test');
 
-    //Get API
+    // API
     fetch('https://randomuser.me/api/?results=5')
         .then(reponse => reponse.json())
         .then(data => {
@@ -18,7 +17,7 @@ function getData() {
             //Get Data Value
             let DataOutput = "<h2><center>Listes des Utilisateurs</center></h2>";
 
-            //Get Data Loop Through
+            
             utilisateur.forEach(function (lists) {
                 DataOutput += `
                  <div class="contenu">
